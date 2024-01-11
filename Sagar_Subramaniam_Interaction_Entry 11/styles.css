@@ -1,0 +1,146 @@
+body{
+    background-color: black;
+    height: 1000px;
+}
+
+#cursor{
+    background: rgb(69,235,255);
+    background: linear-gradient(0deg, rgba(69,235,255,1) 1%, rgba(69,255,143,1) 13%, rgba(255,153,0,1) 68%, rgba(55,0,0,1) 100%);
+    height:50vh;
+    aspect-ratio: 1;
+    position: fixed;
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    animation: rotate 20s infinite;
+    filter: blur(20vh);
+    overflow: none;
+    z-index: -1;
+}
+
+.main{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:70%;
+    text-align: center;
+    z-index: 2;
+}
+
+.title{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size:10vw;
+    text-transform: uppercase;
+}
+
+.letter{
+    display: inline-block;
+    transition: .25s ease;
+}
+
+@keyframes rotate {
+    from{
+        rotate: 0deg;
+    }
+    50%{
+        scale: 1 1.5;
+    }
+    to{
+        rotate:360deg;
+    }
+}
+
+@keyframes jiggle {
+    from{
+        translate: 0 1vh;
+    }
+    50%{
+        translate: 0 -1vh;
+    }
+    to{
+        translate: 0 1vh;
+    }
+}
+
+.main:hover {
+    .letter:nth-child(1){
+        transform: translate(-80%, 60%) rotate(8deg);
+        animation: jiggle 3s ease infinite;
+        .title{
+            color: red;
+        }
+    }
+    .letter:nth-child(2){
+        transform: translate(-40%, 20%) rotate(4deg);
+        animation: jiggle 3s ease infinite;
+        .title{
+            color: orange;
+        }
+    }
+    .letter:nth-child(3){
+        transform: translate(-10%, 60%) rotate(-6deg);
+        animation: jiggle 3s ease infinite;
+        .title{
+            color: skyblue;
+        }
+    }
+    .letter:nth-child(4){
+        transform: translate(0%, 8%) rotate(-8deg);
+        animation: jiggle 3s ease infinite;
+        .title{
+            color: greenyellow;
+        }
+    }
+    .letter:nth-child(5){
+        transform: translate(0%, -20%) rotate(5deg);
+        animation: jiggle 3s ease infinite;
+        .title{
+            color: gold;
+        }
+    }
+    .letter:nth-child(6){
+        transform: translate(0%, 20%) rotate(-3deg);
+        animation: jiggle 3s ease infinite;
+        .title{
+            color: plum;
+        }
+    }
+    .letter:nth-child(7){
+        transform: translate(0%, -40%) rotate(-5deg);
+        animation: jiggle 3s ease infinite;
+        .title{
+            color: palevioletred;
+        }
+    }
+    .letter:nth-child(8){
+        transform: translate(0%, 15%) rotate(10deg);
+        animation: jiggle 3s ease infinite;
+        .title{
+            color: azure;
+        }
+    }
+    .letter:nth-child(9){
+        transform: translate(0%, -50%) rotate(8deg);
+        animation: jiggle 3s ease infinite;
+        .title{
+            color: paleturquoise;
+        }
+    }
+}
+
+.text {
+    width:75vw;
+    padding:10vw;
+    position:absolute;
+    top:700px;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-size: 1.5vw;
+    line-height: 3vw;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+	</head>
+	<body>
+		<img  id="Alien2" src="Alien2.png">
+		<img  id="Alien3" src="Alien3.png">
+		<img  id="Alien4" src="Alien4.png">
+		<img  id="Alien5" src="Wiley-UFO-01.webp">
+		<img  id="Alien6" src="Wiley-UFO-03.webp">
+		<img  id="Alien7" src="Wiley-UFO-05.webp">
+		<img  id="Alien8" src="Wiley-UFO-10.webp">
+	</body>
+
+		<script>
+			const clickableImage2 = document.getElementById('Alien2');
+			let isImageMoved2 = false;
+		
+			clickableImage2.addEventListener('click', () => {
+			if (isImageMoved2) {
+				// Move the image back to its original position
+				
+				clickableImage2.style.transform = 'scale(0.75)';
+				clickableImage2.style.rotate = '70deg';
+				clickableImage2.style.left = '0%';
+
+			} else {
+				// Move the image to a new position (for example, 100px right and 100px down)
+				
+				clickableImage2.style.transform = 'scale(0.75)';
+				clickableImage2.style.rotate = '0deg';
+				clickableImage2.style.left = '50%';
+
+			}
+		
+			// Toggle the state
+			isImageMoved2 = !isImageMoved2;
+			});
+		</script>
+		<script>
+			const clickableImage3 = document.getElementById('Alien3');
+			let isImageMoved3 = false;
+		
+			clickableImage3.addEventListener('click', () => {
+			  if (isImageMoved3) {
+				// Move the image back to its original position
+				
+				clickableImage3.style.transform = 'scale(0.75)';
+				clickableImage3.style.top = '50%';
+				clickableImage3.style.left = '0%';
+	
+			  } else {
+				// Move the image to a new position (for example, 100px right and 100px down)
+				
+				clickableImage3.style.transform = 'scale(0.75)';
+				clickableImage3.style.top = '0%';
+				clickableImage3.style.left = '-10%';
+	
+			  }
+		
+			  // Toggle the state
+			  isImageMoved3 = !isImageMoved3;
+			});
+		</script>
+		<script>
+			const clickableImage4 = document.getElementById('Alien4');
+			let isImageMoved4 = false;
+		
+			clickableImage4.addEventListener('click', () => {
+			if (isImageMoved4) {
+				// Move the image back to its original position
+				clickableImage4.style.left = '0%';
+				clickableImage4.style.top = '-50%';
+				clickableImage4.style.transform = 'scale(0.75)';
+				clickableImage4.style.rotate = '-70deg';
+
+			} else {
+				// Move the image to a new position (for example, 100px right and 100px down)
+				clickableImage4.style.left = '-50%';
+				clickableImage4.style.top = '0%';
+				clickableImage4.style.transform = 'scale(0.75)';
+				clickableImage4.style.rotate = '0deg';
+
+			}
+		
+			// Toggle the state
+			isImageMoved4 = !isImageMoved4;
+		});
+		
+	</script>
+	<script>
+			const clickableImage5 = document.getElementById('Alien5');
+			let isImageMoved5 = false;
+		
+			clickableImage5.addEventListener('click', () => {
+			if (isImageMoved5) {
+				// Move the image back to its original position
+				clickableImage5.style.left = '0%';
+				clickableImage5.style.top = '80%';
+				clickableImage5.style.transform = 'scale(0.5)';
+				clickableImage5.style.rotate = '-70deg';
+
+			} else {
+				// Move the image to a new position (for example, 100px right and 100px down)
+				clickableImage5.style.left = '0%';
+				clickableImage5.style.top = '0%';
+				clickableImage5.style.transform = 'scale(0.5)';
+				clickableImage5.style.rotate = '0deg';
+
+			}
+		
+			// Toggle the state
+			isImageMoved5 = !isImageMoved5;
+		});
+		
+	</script>
+	
+
+
+</html>
