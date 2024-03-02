@@ -37,7 +37,8 @@ var V = Bodies.rectangle((793), 330, (65), (65), gravityShapes);
 var I = Bodies.rectangle((880), 320, (20), (80), gravityShapes);
 var T = Bodies.rectangle((950), 320, (40), (80), gravityShapes);
 var Y = Bodies.rectangle((1040), 330, (65), (65), gravityShapes);
-var text = Bodies.rectangle((760), 590, (1210), (210), gravityShapes);
+var text1 = Bodies.rectangle((760), 640, (1210), (160), gravityShapes);
+var text2 = Bodies.rectangle((760), 490, (225), (20), gravityShapes);
 
 let mouseX = 0
 let mouseY = 0
@@ -58,7 +59,7 @@ document.addEventListener("mousedown", (e)=> {
 
 
 // add all of the bodies to the world
-Composite.add(engine.world, [G, R, A, V, I, T, Y, text]);
+Composite.add(engine.world, [G, R, A, V, I, T, Y, text1, text2]);
 
 // run the renderer
 Render.run(render);
